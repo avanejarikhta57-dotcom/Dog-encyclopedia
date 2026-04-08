@@ -125,7 +125,8 @@ async function init() {
     refresh();
   } catch (err) {
     console.error(err);
-    showError(statusEl, "Failed to load dog breeds. Check your API key or network connection.");
+    const message = err instanceof Error ? err.message : "Failed to load dog breeds. Check your API key or network connection.";
+    showError(statusEl, message);
   }
 }
 
