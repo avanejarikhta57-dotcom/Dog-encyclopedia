@@ -13,7 +13,6 @@
   </head>
   <body>
 
-    <!-- HEADER -->
     <header class="header">
       <div class="header-inner">
         <div class="header-title">
@@ -29,13 +28,10 @@
       </div>
     </header>
 
-    <!-- CONTROLS -->
     <div class="controls-wrapper">
       <div class="controls">
 
-        <!-- Search -->
         <div class="search-box">
-          <span class="search-icon">🔍</span>
           <input
             type="text"
             id="searchInput"
@@ -44,7 +40,6 @@
           />
         </div>
 
-        <!-- Sort -->
         <select id="sortSelect" class="control-select">
           <option value="default">Sort by…</option>
           <option value="name-asc">Name A → Z</option>
@@ -55,7 +50,6 @@
           <option value="lifespan-desc">Lifespan ↓</option>
         </select>
 
-        <!-- Filter by size -->
         <select id="sizeFilter" class="control-select">
           <option value="all">All Sizes</option>
           <option value="small">Small (0–10 kg)</option>
@@ -63,22 +57,18 @@
           <option value="large">Large (26+ kg)</option>
         </select>
 
-        <!-- Favorites toggle -->
-        <button id="favToggle" class="fav-toggle-btn">❤️ Show Favorites</button>
+        <button id="favToggle" class="fav-toggle-btn">Show Favorites</button>
 
       </div>
 
-      <!-- Results count -->
       <p id="resultCount" class="result-count"></p>
     </div>
 
-    <!-- MAIN -->
     <main class="container">
       <div id="status" class="status"></div>
       <section id="breedContainer" class="breed-grid"></section>
     </main>
 
-    <!-- MODAL -->
     <div id="modal" class="modal hidden" role="dialog" aria-modal="true">
       <div class="modal-overlay" id="modalOverlay"></div>
       <div class="modal-box">
